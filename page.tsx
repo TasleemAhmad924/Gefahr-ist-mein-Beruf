@@ -37,14 +37,20 @@ export default function BookWebsite() {
             A gripping journey into the world of professional risk and danger by
             Josef Resch
           </p>
-          <Button
+            <Button 
             variant="outline"
             size="lg"
             className="animate-bounce rounded-full border-red-600 text-red-600 hover:bg-red-600 hover:text-white"
-          >
+            onClick={() => {
+              const aboutBookSection = document.querySelector('[id="about-book"]');
+              if (aboutBookSection) {
+              aboutBookSection.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+            >
             <ChevronDown className="mr-2" />
-            Discover More
-          </Button>
+            Erfahre mehr
+            </Button>
         </div>
       </section>
 
@@ -133,7 +139,7 @@ export default function BookWebsite() {
         <div className="container mx-auto px-4">
           <div className="grid gap-12 md:grid-cols-2">
             <div>
-              <h2 className="mb-6 text-3xl font-bold tracking-tight sm:text-4xl">
+              <h2 id="about-book" className="mb-6 text-3xl font-bold tracking-tight sm:text-4xl">
                 Über das Buch
               </h2>
               <p className="mb-6 text-gray-300">
