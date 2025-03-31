@@ -17,6 +17,7 @@ import {
 } from "lucide-react";
 import { GradientText } from "@/components/ui/gradient-text";
 import { PressBox } from "@/components/ui/press-box";
+import Image from "next/image";
 
 export default function BookWebsite() {
   const jsonLd = {
@@ -345,9 +346,12 @@ export default function BookWebsite() {
               </div>
               <div className="md:col-span-5">
                 <div className="relative aspect-[3/4] overflow-hidden rounded-lg shadow-lg group">
-                  <img
-                    src="/bookcover-HD-new.jpg"
+                  <Image
+                    src="/Bookcover-HD-New.jpg"
                     alt="Book Cover"
+                    width={600}
+                    height={800}
+                    priority
                     className="h-full w-full object-contain transition-transform duration-300 group-hover:scale-[1.02]"
                   />
                 </div>
@@ -407,14 +411,13 @@ export default function BookWebsite() {
                     Jetzt verfügbar auf Amazon
                   </h2>
                   <div className="mb-6 flex flex-col items-center justify-center gap-4">
-                    <img
+                    <Image
                       onClick={() => window.open("https://amzn.eu/d/cbsxeA9", "_blank")}
-                      src="/bookcover-HD-new.jpg"
+                      src="/Bookcover-HD-New.jpg"
                       alt="Book Cover"
-                      className="h-64 w-40 rounded-lg object-contain hover:cursor-pointer transition-transform duration-300 hover:scale-[1.02]"
                       width={160}
                       height={256}
-                      loading="lazy"
+                      className="h-64 w-40 rounded-lg object-contain hover:cursor-pointer transition-transform duration-300 hover:scale-[1.02]"
                     />
                     <div className="relative">
                       <span className="text-3xl font-bold text-primary">18,00€</span>
