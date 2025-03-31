@@ -589,12 +589,18 @@ export default function BookWebsite() {
                 <p className="text-sm text-foreground">
                   © {new Date().getFullYear()} Wifka GmbH. Alle Rechte vorbehalten.
                 </p>
-                <nav>
+                <nav className="flex gap-6">
                   <a
                     href="/datenschutz"
                     className="text-primary hover:text-primary/80 hover:underline transition-all duration-300 font-medium min-h-[44px] flex items-center"
                   >
                     Datenschutz
+                  </a>
+                  <a
+                    href="/impressum"
+                    className="text-primary hover:text-primary/80 hover:underline transition-all duration-300 font-medium min-h-[44px] flex items-center"
+                  >
+                    Impressum
                   </a>
                 </nav>
               </div>
