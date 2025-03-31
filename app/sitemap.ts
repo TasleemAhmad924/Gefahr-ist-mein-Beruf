@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.josef-resch.de'
+  const baseUrl = 'https://www.gefahr-ist-mein-beruf.com'
   
   return [
     {
@@ -9,12 +9,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 1,
-    },
-    {
-      url: `${baseUrl}/datenschutz`,
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
-      priority: 0.3,
     }
   ]
 } 
