@@ -279,35 +279,28 @@ export default function DatenschutzPage() {
                     Werbeinformationen, etwa durch Spam-E-Mails, vor.
                   </p>
                 </section>
+                <h2 className="text-2xl font-bold text-black text-center">
+                  Datenerfassung auf unserer Website
+                </h2>
                 <section className="space-y-6">
                   <h3 className="text-xl font-semibold text-black">Cookies</h3>
                   <p className="text-foreground leading-relaxed">
                     Unsere Internetseiten verwenden so genannte „Cookies“.
                     Cookies sind kleine Textdateien und richten auf Ihrem
-                    Endgerät keinen Schaden an.
-                  </p>
-                  <p className="text-foreground leading-relaxed">
-                    Sie werden entweder vorübergehend für die Dauer einer
-                    Sitzung (Session-Cookies) oder dauerhaft (permanente
-                    Cookies) auf Ihrem Endgerät gespeichert.
-                  </p>
-                  <p className="text-foreground leading-relaxed">
-                    Session-Cookies werden nach Ende Ihres Besuchs automatisch
-                    gelöscht. Permanente Cookies bleiben auf Ihrem Endgerät
-                    gespeichert, bis Sie diese selbst löschen oder eine
+                    Endgerät keinen Schaden an. Sie werden entweder
+                    vorübergehend für die Dauer einer Sitzung (Session-Cookies)
+                    oder dauerhaft (permanente Cookies) auf Ihrem Endgerät
+                    gespeichert. Session-Cookies werden nach Ende Ihres Besuchs
+                    automatisch gelöscht. Permanente Cookies bleiben auf Ihrem
+                    Endgerät gespeichert, bis Sie diese selbst löschen oder eine
                     automatische Löschung durch Ihren Webbrowser erfolgt.
                   </p>
                   <p className="text-foreground leading-relaxed">
                     Teilweise können auch Cookies von Drittunternehmen auf Ihrem
                     Endgerät gespeichert werden, wenn Sie unsere Seite betreten
-                    (Third-Party-Cookies).
-                  </p>
-                  <p className="text-foreground leading-relaxed">
-                    Diese ermöglichen uns oder Ihnen die Nutzung bestimmter
-                    Dienstleistungen des Drittunternehmens (z.B. Cookies zur
-                    Abwicklung von Zahlungsdienstleistungen).
-                  </p>
-                  <p className="text-foreground leading-relaxed">
+                    (Third-Party-Cookies). Diese ermöglichen uns oder Ihnen die
+                    Nutzung bestimmter Dienstleistungen des Drittunternehmens
+                    (z.B. Cookies zur Abwicklung von Zahlungsdienstleistungen).
                     Cookies haben verschiedene Funktionen. Zahlreiche Cookies
                     sind technisch notwendig, da bestimmte Webseitenfunktionen
                     ohne diese nicht funktionieren würden (z.B. die
@@ -325,19 +318,14 @@ export default function DatenschutzPage() {
                     zur Optimierung der Webseite (z.B. Cookies zur Messung des
                     Webpublikums) erforderlich sind, werden auf Grundlage von
                     Art. 6 Abs. 1 lit. f DSGVO gespeichert, sofern keine andere
-                    Rechtsgrundlage angegeben wird.
-                  </p>
-                  <p className="text-foreground leading-relaxed">
-                    Der Websitebetreiber hat ein berechtigtes Interesse an der
-                    Speicherung von Cookies zur technisch fehlerfreien und
-                    optimierten Bereitstellung seiner Dienste.
-                  </p>
-                  <p className="text-foreground leading-relaxed">
-                    Sofern eine Einwilligung zur Speicherung von Cookies
-                    abgefragt wurde, erfolgt die Speicherung der betreffenden
-                    Cookies ausschließlich auf Grundlage dieser Einwilligung
-                    (Art. 6 Abs. 1 lit. a DSGVO); die Einwilligung ist jederzeit
-                    widerrufbar.
+                    Rechtsgrundlage angegeben wird. Der Websitebetreiber hat ein
+                    berechtigtes Interesse an der Speicherung von Cookies zur
+                    technisch fehlerfreien und optimierten Bereitstellung seiner
+                    Dienste. Sofern eine Einwilligung zur Speicherung von
+                    Cookies abgefragt wurde, erfolgt die Speicherung der
+                    betreffenden Cookies ausschließlich auf Grundlage dieser
+                    Einwilligung (Art. 6 Abs. 1 lit. a DSGVO); die Einwilligung
+                    ist jederzeit widerrufbar.
                   </p>
                   <p className="text-foreground leading-relaxed">
                     Sie können Ihren Browser so einstellen, dass Sie über das
@@ -345,8 +333,6 @@ export default function DatenschutzPage() {
                     Einzelfall erlauben, die Annahme von Cookies für bestimmte
                     Fälle oder generell ausschließen sowie das automatische
                     Löschen der Cookies beim Schließen des Browsers aktivieren.
-                  </p>
-                  <p className="text-foreground leading-relaxed">
                     Bei der Deaktivierung von Cookies kann die Funktionalität
                     dieser Website eingeschränkt sein.
                   </p>
@@ -396,6 +382,10 @@ export default function DatenschutzPage() {
                     Art. 6 Abs. 1 S. 1 lit. c DSGVO.
                   </p>
                 </section>
+
+                <h2 className="text-2xl font-bold text-black text-center">
+                  Analyse Tools und Werbung
+                </h2>
                 <section className="space-y-6">
                   <h3 className="text-xl font-semibold text-black">
                     Google Analytics
@@ -527,6 +517,9 @@ export default function DatenschutzPage() {
                   </p>
                 </section>
 
+                <h2 className="text-2xl font-bold text-black text-center">
+                  Plugins und Tools
+                </h2>
                 <section className="space-y-6">
                   <h3 className="text-xl font-semibold text-black">YouTube</h3>
                   <p className="text-foreground leading-relaxed">
