@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import Script from 'next/script'
+import { PostHogProvider } from '../components/PostHogProvider'
 
 export const metadata: Metadata = {
   title: 'Gefahr ist mein Beruf – Josef Resch | Privatermittler & Autor',
@@ -37,10 +38,8 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({
-                                     children,
-                                   }: Readonly<{
-  children: React.ReactNode
-}>) {
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="de">
       <head>
@@ -59,7 +58,9 @@ export default function RootLayout({
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N825RXCR"
 height="0" width="0" style={{display: 'none', visibility: 'hidden'}}></iframe></noscript>
         {/* End Google Tag Manager (noscript) */}
-        {children}
+        <PostHogProvider>
+          {children}
+        </PostHogProvider>
       </body>
     </html>
   )
