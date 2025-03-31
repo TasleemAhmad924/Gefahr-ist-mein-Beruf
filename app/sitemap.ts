@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.josef-resch.de'
+  const baseUrl = 'https://www.gefahr-ist-mein-beruf.com'
   
   return [
     {
