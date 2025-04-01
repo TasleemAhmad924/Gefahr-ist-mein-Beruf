@@ -17,6 +17,7 @@ import {
 } from "lucide-react";
 import { GradientText } from "@/components/ui/gradient-text";
 import { PressBox } from "@/components/ui/press-box";
+import Image from "next/image";
 
 export default function BookWebsite() {
   const jsonLd = {
@@ -402,33 +403,55 @@ export default function BookWebsite() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-[90rem] mx-auto">
               <div className="rounded-lg border-2 border-primary/20 bg-white p-6 md:p-8">
-                <div className="mx-auto max-w-2xl text-center space-y-6">
-                  <h2 className="mb-4 text-3xl font-bold tracking-tight text-black sm:text-4xl">
-                    Jetzt verfügbar auf Amazon
-                  </h2>
-                  <div className="mb-6 flex flex-col items-center justify-center gap-4">
-                    <img
-                      onClick={() => window.open("https://amzn.eu/d/cbsxeA9", "_blank")}
-                      src="/bookcover-HD-new.jpg"
-                      alt="Book Cover"
-                      className="h-64 w-40 rounded-lg object-contain hover:cursor-pointer transition-transform duration-300 hover:scale-[1.02]"
-                      width={160}
-                      height={256}
-                      loading="lazy"
-                    />
-                    <div className="relative">
-                      <span className="text-3xl font-bold text-primary">18,00€</span>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+                  <div className="space-y-6">
+                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-black">
+                      Zwei faszinierende Bücher für jeden Geschmack auf Amazon
+                    </h2>
+                    <div className="space-y-4 text-gray-600">
+                      <p>
+                        „Gefahr ist mein Beruf" – Enthüllt die Geheimnisse des Privatdetektivs und das Leben im Schatten der gefährlichsten Fälle.
+                      </p>
+                      <p>
+                        „Einkehr in der Schwaigeralm bei Kreuth" – Erlebe die Geschichte einer legendären Almwirtschaft und ihre kulinarischen Traditionen von Hermine Resch.
+                      </p>
+                    </div>
+                    <div className="flex flex-col sm:flex-row gap-4">
+                      <Button
+                        onClick={() => window.open('https://amzn.eu/d/3by4fpM', '_blank')}
+                        className="bg-[#FF9900] hover:bg-[#FF9900]/90 text-white transition-all duration-300 hover:scale-[1.02] transform"
+                      >
+                        Jetzt auf Amazon kaufen
+                        <ExternalLink className="ml-2 h-4 w-4" />
+                      </Button>
+                      <Button
+                        onClick={() => window.open('https://amzn.eu/d/cCKzs4r', '_blank')}
+                        className="bg-[#FF9900] hover:bg-[#FF9900]/90 text-white transition-all duration-300 hover:scale-[1.02] transform"
+                      >
+                        Jetzt auf Amazon kaufen
+                        <ExternalLink className="ml-2 h-4 w-4" />
+                      </Button>
                     </div>
                   </div>
-                  <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
-                    <Button
-                      onClick={() => window.open("https://amzn.eu/d/14ofGGX", "_blank")}
-                      size="lg"
-                      className="bg-[#FF9900] hover:bg-[#FF9900]/90 transition-all duration-300 hover:scale-[1.02] transform min-h-[48px] w-full sm:w-auto px-8"
-                    >
-                      <ShoppingCart className="mr-2 h-5 w-5" />
-                      Jetzt kaufen
-                    </Button>
+                  <div className="grid grid-cols-2 gap-4">
+                    <div className="relative aspect-[3/4] rounded-lg overflow-hidden group">
+                      <Image
+                        src="/Mother-Bookcover.jpg"
+                        alt="Buchcover"
+                        fill
+                        className="object-cover transition-transform duration-300 group-hover:scale-[1.05]"
+                        priority
+                      />
+                    </div>
+                    <div className="relative aspect-[3/4] rounded-lg overflow-hidden group">
+                      <Image
+                        src="/bookcover-HD-new.jpg"
+                        alt="Buchcover"
+                        fill
+                        className="object-cover transition-transform duration-300 group-hover:scale-[1.05]"
+                        priority
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
