@@ -347,7 +347,7 @@ export default function BookWebsite() {
               <div className="md:col-span-5">
                 <div className="relative aspect-[3/4] overflow-hidden rounded-lg shadow-lg group">
                   <img
-                    src="/bookcover-HD-new.jpg"
+                    src="/Bookcover-HD-New.jpg"
                     alt="Book Cover"
                     className="h-full w-full object-contain transition-transform duration-300 group-hover:scale-[1.02]"
                   />
@@ -445,7 +445,7 @@ export default function BookWebsite() {
                     </div>
                     <div className="relative aspect-[3/4] rounded-lg overflow-hidden group">
                       <Image
-                        src="/bookcover-HD-new.jpg"
+                        src="/Bookcover-HD-New.jpg"
                         alt="Buchcover"
                         fill
                         className="object-cover transition-transform duration-300 group-hover:scale-[1.05]"

@@ -24,23 +24,24 @@ const nextConfig = {
           {
             key: 'Content-Security-Policy',
             value: [
+              // Default - restrict to self
               "default-src 'self'",
-              // Scripts - allow self and specific CDNs
-              "script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com https://app.posthog.com",
-              // Styles - allow self and unsafe-inline for Next.js
-              "style-src 'self' 'unsafe-inline'",
-              // Images - allow self and specific image hosts
-              "img-src 'self' data: https: blob:",
+              // Scripts - allow self and specific trusted sources
+              "script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com https://app.posthog.com https://www.google-analytics.com",
+              // Styles - allow self and inline for Next.js
+              "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+              // Images - allow self, data URIs, and HTTPS sources
+              "img-src 'self' data: https: blob: https://www.gefahr-ist-mein-beruf.com",
               // Fonts - allow self and Google Fonts
               "font-src 'self' https://fonts.gstatic.com",
-              // Connect - allow specific APIs
-              "connect-src 'self' https://app.posthog.com https://vitals.vercel-insights.com",
+              // Connect - allow APIs and analytics
+              "connect-src 'self' https://app.posthog.com https://vitals.vercel-insights.com https://www.google-analytics.com",
               // Media - restrict to self
               "media-src 'self'",
               // Object/Embed - restrict completely
               "object-src 'none'",
-              // Frame - restrict to self
-              "frame-src 'self'",
+              // Frame - allow self and trusted sources
+              "frame-src 'self' https://www.youtube.com",
               // Base URI - restrict to self
               "base-uri 'self'",
               // Form actions - restrict to self
