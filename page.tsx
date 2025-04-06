@@ -1,6 +1,6 @@
 "use client"
 
-import { ChevronDown, ExternalLink } from "lucide-react";
+import { ChevronDown, ExternalLink, Mail, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
@@ -18,6 +18,8 @@ import {
 import { GradientText } from "@/components/ui/gradient-text";
 import { PressBox } from "@/components/ui/press-box";
 import Image from "next/image";
+import { ClientWrapper } from "@/components/ClientWrapper";
+import { CookieConsent } from "@/components/ui/cookie-consent";
 
 export default function BookWebsite() {
   const jsonLd = {
@@ -48,7 +50,7 @@ export default function BookWebsite() {
   };
 
   return (
-    <>
+    <ClientWrapper>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -410,10 +412,13 @@ export default function BookWebsite() {
                     </h2>
                     <div className="space-y-4 text-gray-600">
                       <p>
-                        „Gefahr ist mein Beruf" – Enthüllt die Geheimnisse des Privatdetektivs und das Leben im Schatten der gefährlichsten Fälle.
+                        <strong>„Gefahr ist mein Beruf"</strong> – Enthüllt die Geheimnisse des Privatdetektivs und das Leben im Schatten der gefährlichsten Fälle.
                       </p>
                       <p>
-                        „Einkehr in der Schwaigeralm bei Kreuth" – Erlebe die Geschichte einer legendären Almwirtschaft und ihre kulinarischen Traditionen von Hermine Resch.
+                        <strong>„Einkehr in der Schwaigeralm bei Kreuth"</strong> – Erlebe die Geschichte der legendären Almwirtschaft, dem Elternhaus von Josef Resch, und ihre kulinarischen Traditionen, liebevoll erzählt von Hermine Resch.
+                      </p>
+                      <p className="text-sm italic">
+                        Tipp: Die beiden Bücher bilden zusammen ein einzigartiges Gesamtbild – das Leben eines Privatdetektivs und die Wurzeln in der traditionsreichen Schwaigeralm bei Kreuth. Bald im Set erhältlich!
                       </p>
                     </div>
                     <div className="flex flex-col sm:flex-row gap-4">
@@ -459,80 +464,32 @@ export default function BookWebsite() {
           </div>
         </section>
 
-        {/* Call to Action */}
-        <section className="py-16 md:py-24 border-t-2 border-primary/10">
+        {/* Contact Section */}
+        <section className="py-16 md:py-24">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-[90rem] mx-auto">
-              <div className="rounded-lg bg-primary/5 p-6 md:p-8 text-center">
-                <h2 className="mb-6 text-3xl font-bold tracking-tight text-black sm:text-4xl">
-                  Jetzt erhältlich bei Hugendubel & Thalia
+              <div className="rounded-lg bg-[#E53935] p-6 md:p-8 text-center">
+                <h2 className="mb-6 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                  Sie brauchen Hilfe?
                 </h2>
-                <p className="mx-auto mb-8 max-w-2xl text-foreground text-lg">
-                  Bestelle dein Exemplar ganz einfach online und tauche in eine Welt voller Spannung und Risiko ein.
+                <p className="mx-auto mb-8 max-w-2xl text-white text-lg">
+                  Kontaktieren Sie Josef Resch – vertraulich und direkt, per Mail oder telefonisch. Als erfahrener Privatermittler steht er Ihnen mit höchster Diskretion zur Seite.
                 </p>
-                
-                {/* Button Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                  <Button 
-                    size="lg"
-                    className="bg-[#E53935] hover:brightness-110 text-white transition-all duration-300 px-6 py-3 rounded hover:scale-[1.02] transform min-h-[48px]"
-                    onClick={() =>
-                      window.open(
-                        "https://www.hugendubel.de/de/taschenbuch/josef_resch-gefahr_ist_mein_beruf-50207187-produkt-details.html",
-                        "_blank"
-                      )
-                    }
+                <div className="flex flex-col sm:flex-row justify-center gap-4">
+                  <a
+                    href="mailto:info@wifka.de"
+                    className="inline-flex items-center justify-center px-6 py-3 rounded-md bg-white text-[#E53935] font-semibold hover:bg-opacity-90 transition-all duration-300"
                   >
-                    <Store className="mr-2 h-5 w-5" />
-                    Bei Hugendubel kaufen
-                  </Button>
-                  <Button 
-                    size="lg"
-                    className="bg-[#E53935] hover:brightness-110 text-white transition-all duration-300 px-6 py-3 rounded hover:scale-[1.02] transform min-h-[48px]"
-                    onClick={() =>
-                      window.open(
-                        "https://www.thalia.de/shop/home/artikeldetails/A1074746056",
-                        "_blank"
-                      )
-                    }
+                    <Mail className="mr-2 h-5 w-5" />
+                    info@wifka.de
+                  </a>
+                  <a
+                    href="tel:+4917183618680"
+                    className="inline-flex items-center justify-center px-6 py-3 rounded-md bg-white text-[#E53935] font-semibold hover:bg-opacity-90 transition-all duration-300"
                   >
-                    <Store className="mr-2 h-5 w-5" />
-                    Bei Thalia kaufen
-                  </Button>
-                </div>
-
-                {/* Book Details Section */}
-                <div className="mt-6">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
-                    <div className="space-y-3">
-                      <div className="border-b border-[#EEEEEE] p-3">
-                        <p className="text-foreground"><strong>Einband:</strong> Taschenbuch</p>
-                      </div>
-                      <div className="border-b border-[#EEEEEE] p-3">
-                        <p className="text-foreground"><strong>Erscheinungsdatum:</strong> 07.04.2025</p>
-                      </div>
-                      <div className="border-b border-[#EEEEEE] p-3">
-                        <p className="text-foreground"><strong>Verlag:</strong> Westend</p>
-                      </div>
-                      <div className="border-b border-[#EEEEEE] p-3">
-                        <p className="text-foreground"><strong>Seitenzahl:</strong> 304</p>
-                      </div>
-                    </div>
-                    <div className="space-y-3">
-                      <div className="border-b border-[#EEEEEE] p-3">
-                        <p className="text-foreground"><strong>Maße (L/B):</strong> 21,5/13,5 cm</p>
-                      </div>
-                      <div className="border-b border-[#EEEEEE] p-3">
-                        <p className="text-foreground"><strong>Auflage:</strong> 1</p>
-                      </div>
-                      <div className="border-b border-[#EEEEEE] p-3">
-                        <p className="text-foreground"><strong>Sprache:</strong> Deutsch</p>
-                      </div>
-                      <div className="border-b border-[#EEEEEE] p-3">
-                        <p className="text-foreground"><strong>ISBN:</strong> 978-3-9879132-2-8</p>
-                      </div>
-                    </div>
-                  </div>
+                    <Phone className="mr-2 h-5 w-5" />
+                    +49 171 8361868
+                  </a>
                 </div>
               </div>
             </div>
@@ -630,7 +587,10 @@ export default function BookWebsite() {
             </div>
           </div>
         </footer>
+
+        {/* Cookie Consent */}
+        <CookieConsent />
       </div>
-    </>
+    </ClientWrapper>
   );
 }
