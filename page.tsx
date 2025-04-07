@@ -404,85 +404,90 @@ export default function BookWebsite() {
         <section className="py-16 md:py-24 border-t-2 border-primary/10">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-[90rem] mx-auto">
+              {/* Hugendubel & Thalia Section */}
               <div className="rounded-lg border-2 border-primary/20 bg-white p-6 md:p-8">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
-                  <div className="space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-start">
+                  <div className="md:col-span-8 space-y-6">
                     <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-black">
                       Jetzt erhältlich bei Hugendubel & Thalia
                     </h2>
-                    <div className="space-y-4 text-gray-600">
-                      <p>
+                    <div className="space-y-6">
+                      <p className="text-gray-700 text-lg">
                         <strong>„Gefahr ist mein Beruf"</strong> ist ab sofort in allen Hugendubel und Thalia Filialen sowie online erhältlich.
                       </p>
                       
-                      <div className="grid grid-cols-2 gap-2 text-sm">
-                        <div>
-                          <p className="font-medium">Erscheinungsdatum</p>
-                          <p>07. April 2025</p>
+                      <div className="grid grid-cols-2 gap-4 bg-gray-50 p-6 rounded-lg">
+                        <div className="space-y-1">
+                          <p className="font-semibold text-black">Erscheinungsdatum</p>
+                          <p className="text-gray-700">07. April 2025</p>
                         </div>
-                        <div>
-                          <p className="font-medium">Sprache</p>
-                          <p>Deutsch</p>
+                        <div className="space-y-1">
+                          <p className="font-semibold text-black">Sprache</p>
+                          <p className="text-gray-700">Deutsch</p>
                         </div>
-                        <div>
-                          <p className="font-medium">Seitenanzahl</p>
-                          <p>304</p>
+                        <div className="space-y-1">
+                          <p className="font-semibold text-black">Seitenanzahl</p>
+                          <p className="text-gray-700">304</p>
                         </div>
-                        <div>
-                          <p className="font-medium">Autor</p>
-                          <p>Josef Resch</p>
+                        <div className="space-y-1">
+                          <p className="font-semibold text-black">Autor</p>
+                          <p className="text-gray-700">Josef Resch</p>
                         </div>
-                        <div>
-                          <p className="font-medium">Verlag</p>
-                          <p>Westend</p>
+                        <div className="space-y-1">
+                          <p className="font-semibold text-black">Verlag</p>
+                          <p className="text-gray-700">Westend</p>
                         </div>
-                        <div>
-                          <p className="font-medium">Produktart</p>
-                          <p>Kartoniert</p>
+                        <div className="space-y-1">
+                          <p className="font-semibold text-black">Produktart</p>
+                          <p className="text-gray-700">Kartoniert</p>
                         </div>
-                        <div>
-                          <p className="font-medium">Gewicht</p>
-                          <p>425 g</p>
+                        <div className="space-y-1">
+                          <p className="font-semibold text-black">Gewicht</p>
+                          <p className="text-gray-700">425 g</p>
                         </div>
-                        <div>
-                          <p className="font-medium">Größe (L/B/H)</p>
-                          <p>25/135/216 mm</p>
+                        <div className="space-y-1">
+                          <p className="font-semibold text-black">Größe (L/B/H)</p>
+                          <p className="text-gray-700">25/135/216 mm</p>
                         </div>
-                        <div>
-                          <p className="font-medium">ISBN</p>
-                          <p>9783987913228</p>
+                        <div className="col-span-2 space-y-1 border-t border-gray-200 pt-4 mt-2">
+                          <p className="font-semibold text-black">ISBN</p>
+                          <p className="text-gray-700">9783987913228</p>
                         </div>
                       </div>
                     </div>
-                    <div className="flex flex-col sm:flex-row gap-4">
+                    <div className="flex flex-col sm:flex-row gap-4 pt-4">
                       <Button
                         onClick={() => window.open('https://www.hugendubel.de/de/taschenbuch/josef_resch-gefahr_ist_mein_beruf-50207187-produkt-details.html', '_blank')}
-                        className="bg-primary hover:bg-primary/90 text-white transition-all duration-300 hover:scale-[1.02] transform"
+                        className="bg-primary hover:bg-primary/90 text-white transition-all duration-300 hover:scale-[1.02] transform flex-1 min-h-[48px]"
                       >
                         Bei Hugendubel kaufen
                         <ExternalLink className="ml-2 h-4 w-4" />
                       </Button>
                       <Button
                         onClick={() => window.open('https://www.thalia.de/shop/home/artikeldetails/A1074746056', '_blank')}
-                        className="bg-primary hover:bg-primary/90 text-white transition-all duration-300 hover:scale-[1.02] transform"
+                        className="bg-primary hover:bg-primary/90 text-white transition-all duration-300 hover:scale-[1.02] transform flex-1 min-h-[48px]"
                       >
                         Bei Thalia kaufen
                         <ExternalLink className="ml-2 h-4 w-4" />
                       </Button>
                     </div>
                   </div>
-                  <div className="relative aspect-[3/4] rounded-lg overflow-hidden group h-[400px]">
-                    <Image
-                      src="/bookcover-HD-new.jpg"
-                      alt="Buchcover"
-                      fill
-                      className="object-contain transition-transform duration-300 group-hover:scale-[1.05]"
-                      priority
-                    />
+                  <div className="md:col-span-4">
+                    <div className="relative aspect-[3/4] rounded-lg overflow-hidden group shadow-lg hover:shadow-xl transition-shadow duration-300">
+                      <Image
+                        src="/bookcover-HD-new.jpg"
+                        alt="Buchcover von 'Gefahr ist mein Beruf' von Josef Resch"
+                        fill
+                        className="object-cover transition-transform duration-300 group-hover:scale-[1.05]"
+                        priority
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 25vw"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
 
+              {/* Amazon Section */}
               <div className="rounded-lg border-2 border-primary/20 bg-white p-6 md:p-8 mt-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
                   <div className="space-y-6">
