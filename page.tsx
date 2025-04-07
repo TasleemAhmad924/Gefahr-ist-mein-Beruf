@@ -349,7 +349,7 @@ export default function BookWebsite() {
               <div className="md:col-span-5">
                 <div className="relative w-full aspect-[3/4] rounded-lg overflow-hidden group shadow-lg hover:shadow-xl transition-shadow duration-300">
                   <Image
-                    src="/bookcover-HD-new.jpg"
+                    src="/Bookcover-HD-New.jpg"
                     alt="Buchcover von 'Gefahr ist mein Beruf' von Josef Resch"
                     fill
                     className="object-contain w-full h-full transition-transform duration-300 group-hover:scale-[1.02]"
@@ -480,7 +480,7 @@ export default function BookWebsite() {
                   <div className="md:col-span-4">
                     <div className="relative w-full aspect-[3/4] rounded-lg overflow-hidden group shadow-lg hover:shadow-xl transition-shadow duration-300">
                       <Image
-                        src="/bookcover-HD-new.jpg"
+                        src="/Bookcover-HD-New.jpg"
                         alt="Buchcover von 'Gefahr ist mein Beruf' von Josef Resch"
                         fill
                         className="object-contain w-full h-full"
@@ -544,7 +544,7 @@ export default function BookWebsite() {
                     </div>
                     <div className="relative w-full aspect-[3/4] rounded-lg overflow-hidden group shadow-lg hover:shadow-xl transition-shadow duration-300">
                       <Image
-                        src="/bookcover-HD-new.jpg"
+                        src="/Bookcover-HD-New.jpg"
                         alt="Buchcover von 'Gefahr ist mein Beruf' von Josef Resch"
                         fill
                         className="object-contain w-full h-full transition-transform duration-300 group-hover:scale-[1.02]"
