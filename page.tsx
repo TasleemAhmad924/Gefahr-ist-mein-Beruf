@@ -408,6 +408,85 @@ export default function BookWebsite() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
                   <div className="space-y-6">
                     <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-black">
+                      Jetzt erhältlich bei Hugendubel & Thalia
+                    </h2>
+                    <div className="space-y-4 text-gray-600">
+                      <p>
+                        <strong>„Gefahr ist mein Beruf"</strong> ist ab sofort in allen Hugendubel und Thalia Filialen sowie online erhältlich.
+                      </p>
+                      
+                      <div className="grid grid-cols-2 gap-2 text-sm">
+                        <div>
+                          <p className="font-medium">Erscheinungsdatum</p>
+                          <p>07. April 2025</p>
+                        </div>
+                        <div>
+                          <p className="font-medium">Sprache</p>
+                          <p>Deutsch</p>
+                        </div>
+                        <div>
+                          <p className="font-medium">Seitenanzahl</p>
+                          <p>304</p>
+                        </div>
+                        <div>
+                          <p className="font-medium">Autor</p>
+                          <p>Josef Resch</p>
+                        </div>
+                        <div>
+                          <p className="font-medium">Verlag</p>
+                          <p>Westend</p>
+                        </div>
+                        <div>
+                          <p className="font-medium">Produktart</p>
+                          <p>Kartoniert</p>
+                        </div>
+                        <div>
+                          <p className="font-medium">Gewicht</p>
+                          <p>425 g</p>
+                        </div>
+                        <div>
+                          <p className="font-medium">Größe (L/B/H)</p>
+                          <p>25/135/216 mm</p>
+                        </div>
+                        <div>
+                          <p className="font-medium">ISBN</p>
+                          <p>9783987913228</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="flex flex-col sm:flex-row gap-4">
+                      <Button
+                        onClick={() => window.open('https://www.hugendubel.de/de/taschenbuch/josef_resch-gefahr_ist_mein_beruf-50207187-produkt-details.html', '_blank')}
+                        className="bg-primary hover:bg-primary/90 text-white transition-all duration-300 hover:scale-[1.02] transform"
+                      >
+                        Bei Hugendubel kaufen
+                        <ExternalLink className="ml-2 h-4 w-4" />
+                      </Button>
+                      <Button
+                        onClick={() => window.open('https://www.thalia.de/shop/home/artikeldetails/A1074746056', '_blank')}
+                        className="bg-primary hover:bg-primary/90 text-white transition-all duration-300 hover:scale-[1.02] transform"
+                      >
+                        Bei Thalia kaufen
+                        <ExternalLink className="ml-2 h-4 w-4" />
+                      </Button>
+                    </div>
+                  </div>
+                  <div className="relative aspect-[3/4] rounded-lg overflow-hidden group h-[400px]">
+                    <Image
+                      src="/bookcover-HD-new.jpg"
+                      alt="Buchcover"
+                      fill
+                      className="object-contain transition-transform duration-300 group-hover:scale-[1.05]"
+                      priority
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div className="rounded-lg border-2 border-primary/20 bg-white p-6 md:p-8 mt-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+                  <div className="space-y-6">
+                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-black">
                       Zwei faszinierende Bücher für jeden Geschmack auf Amazon
                     </h2>
                     <div className="space-y-4 text-gray-600">
