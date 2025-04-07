@@ -347,11 +347,16 @@ export default function BookWebsite() {
                 </Button>
               </div>
               <div className="md:col-span-5">
-                <div className="relative aspect-[3/4] overflow-hidden rounded-lg shadow-lg group">
-                  <img
-                    src="/Bookcover-HD-New.jpg"
-                    alt="Book Cover"
-                    className="h-full w-full object-contain transition-transform duration-300 group-hover:scale-[1.02]"
+                <div className="relative w-full aspect-[3/4] rounded-lg overflow-hidden group shadow-lg hover:shadow-xl transition-shadow duration-300">
+                  <Image
+                    src="/bookcover-HD-new.jpg"
+                    alt="Buchcover von 'Gefahr ist mein Beruf' von Josef Resch"
+                    fill
+                    className="object-contain w-full h-full"
+                    priority
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 25vw"
+                    quality={100}
+                    loading="eager"
                   />
                 </div>
               </div>
@@ -473,14 +478,16 @@ export default function BookWebsite() {
                     </div>
                   </div>
                   <div className="md:col-span-4">
-                    <div className="relative aspect-[3/4] rounded-lg overflow-hidden group shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div className="relative w-full aspect-[3/4] rounded-lg overflow-hidden group shadow-lg hover:shadow-xl transition-shadow duration-300">
                       <Image
                         src="/bookcover-HD-new.jpg"
                         alt="Buchcover von 'Gefahr ist mein Beruf' von Josef Resch"
                         fill
-                        className="object-cover transition-transform duration-300 group-hover:scale-[1.05]"
+                        className="object-contain w-full h-full"
                         priority
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 25vw"
+                        quality={100}
+                        loading="eager"
                       />
                     </div>
                   </div>
@@ -534,7 +541,7 @@ export default function BookWebsite() {
                     </div>
                     <div className="relative aspect-[3/4] rounded-lg overflow-hidden group">
                       <Image
-                        src="/Bookcover-HD-New.jpg"
+                        src="/bookcover-HD-new.jpg"
                         alt="Buchcover"
                         fill
                         className="object-cover transition-transform duration-300 group-hover:scale-[1.05]"
