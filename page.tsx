@@ -421,7 +421,7 @@ export default function BookWebsite() {
                         <strong>„Gefahr ist mein Beruf"</strong> ist ab sofort in allen Hugendubel und Thalia Filialen sowie online erhältlich.
                       </p>
                       
-                      <div className="grid grid-cols-2 gap-4 bg-gray-50 p-6 rounded-lg">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-gray-50 p-6 rounded-lg">
                         <div className="space-y-1">
                           <p className="font-semibold text-black">Erscheinungsdatum</p>
                           <p className="text-gray-700">07. April 2025</p>
@@ -454,7 +454,7 @@ export default function BookWebsite() {
                           <p className="font-semibold text-black">Größe (L/B/H)</p>
                           <p className="text-gray-700">25/135/216 mm</p>
                         </div>
-                        <div className="col-span-2 space-y-1 border-t border-gray-200 pt-4 mt-2">
+                        <div className="col-span-1 sm:col-span-2 space-y-1 border-t border-gray-200 pt-4 mt-2">
                           <p className="font-semibold text-black">ISBN</p>
                           <p className="text-gray-700">9783987913228</p>
                         </div>
