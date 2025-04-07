@@ -352,7 +352,7 @@ export default function BookWebsite() {
                     src="/bookcover-HD-new.jpg"
                     alt="Buchcover von 'Gefahr ist mein Beruf' von Josef Resch"
                     fill
-                    className="object-contain w-full h-full"
+                    className="object-contain w-full h-full transition-transform duration-300 group-hover:scale-[1.02]"
                     priority
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 25vw"
                     quality={100}
@@ -530,22 +530,28 @@ export default function BookWebsite() {
                     </div>
                   </div>
                   <div className="grid grid-cols-2 gap-4">
-                    <div className="relative aspect-[3/4] rounded-lg overflow-hidden group">
+                    <div className="relative w-full aspect-[3/4] rounded-lg overflow-hidden group shadow-lg hover:shadow-xl transition-shadow duration-300">
                       <Image
                         src="/Mother-Bookcover.jpg"
-                        alt="Buchcover"
+                        alt="Buchcover 'Einkehr in der Schwaigeralm bei Kreuth' von Hermine Resch"
                         fill
-                        className="object-cover transition-transform duration-300 group-hover:scale-[1.05]"
+                        className="object-contain w-full h-full transition-transform duration-300 group-hover:scale-[1.02]"
                         priority
+                        sizes="(max-width: 768px) 50vw, (max-width: 1200px) 25vw, 20vw"
+                        quality={100}
+                        loading="eager"
                       />
                     </div>
-                    <div className="relative aspect-[3/4] rounded-lg overflow-hidden group">
+                    <div className="relative w-full aspect-[3/4] rounded-lg overflow-hidden group shadow-lg hover:shadow-xl transition-shadow duration-300">
                       <Image
                         src="/bookcover-HD-new.jpg"
-                        alt="Buchcover"
+                        alt="Buchcover von 'Gefahr ist mein Beruf' von Josef Resch"
                         fill
-                        className="object-cover transition-transform duration-300 group-hover:scale-[1.05]"
+                        className="object-contain w-full h-full transition-transform duration-300 group-hover:scale-[1.02]"
                         priority
+                        sizes="(max-width: 768px) 50vw, (max-width: 1200px) 25vw, 20vw"
+                        quality={100}
+                        loading="eager"
                       />
                     </div>
                   </div>
