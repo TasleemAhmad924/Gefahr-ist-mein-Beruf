@@ -375,23 +375,23 @@ export default function BookWebsite() {
                 <PressBox
                   type="news"
                   outlet="Wifka News"
+                  title="Privatermittler sucht Simon Desue"
+                  href="https://wifka.de/blog/privatermittler-sucht-simon-desue"
+                  imageSrc="/Media-Box-Picture-NEW1.jpeg"
+                />
+                <PressBox
+                  type="news"
+                  outlet="Wifka News"
                   title="Einbruch bei Deutscher Bank: Privatermittler soll helfen"
                   href="https://wifka.de/blog/einbruch-bei-deutscher-bank-privatermittler-soll-helfen"
                   imageSrc="/Media-Box-Picture-1.png"
                 />
                 <PressBox
-                  type="tv"
-                  outlet="Tim Gabel Podcast"
-                  title="JOSEF RESCH: Jagd auf Pablo Escobar, Florian Homm und die Wahrheit hinter Flug MH17"
-                  href="https://youtu.be/VaEd6C4iBaw?si=W7H5ynp17o7MVMZ_"
-                  imageSrc="/Media-Box-Picture-2.jpg"
-                />
-                <PressBox
                   type="news"
                   outlet="Wifka News"
-                  title="Als in Travemünde eine Autobombe explodierte"
-                  href="https://wifka.de/blog/als-in-travem%C3%BCnde-eine-autobombe-explodierte"
-                  imageSrc="/Media-Box-Picture-3.png"
+                  title="Podcast-Edition des Buchs: &quot;Ich traf Pablo Escobar – Ermittlungen zum MH17-Abschuss&quot;"
+                  href="https://wifka.de/blog/ich-traf-pablo-escobar-und-ermittelte-zu-mh17-privatermittler-josef-resch"
+                  imageSrc="/Thumbnail-Picture.jpg"
                 />
                 <PressBox
                   type="link"
@@ -475,6 +475,13 @@ export default function BookWebsite() {
                         Bei Thalia kaufen
                         <ExternalLink className="ml-2 h-4 w-4" />
                       </Button>
+                      <Button
+                        onClick={() => window.open('https://www.buchkomplizen.de/buecher-mehr/gefahr-ist-mein-beruf.html', '_blank')}
+                        className="bg-primary hover:bg-primary/90 text-white transition-all duration-300 hover:scale-[1.02] transform flex-1 min-h-[48px]"
+                      >
+                        Bei Buchkomplizen kaufen
+                        <ExternalLink className="ml-2 h-4 w-4" />
+                      </Button>
                     </div>
                   </div>
                   <div className="md:col-span-4">
@@ -496,7 +503,7 @@ export default function BookWebsite() {
 
               {/* Amazon Section */}
               <div className="rounded-lg border-2 border-primary/20 bg-white p-6 md:p-8 mt-8">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-start">
                   <div className="space-y-6">
                     <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-black">
                       Zwei faszinierende Bücher für jeden Geschmack auf Amazon
@@ -509,23 +516,30 @@ export default function BookWebsite() {
                         <strong>„Einkehr in der Schwaigeralm bei Kreuth"</strong> – Erlebe die Geschichte der legendären Almwirtschaft, dem Elternhaus von Josef Resch, und ihre kulinarischen Traditionen, liebevoll erzählt von Hermine Resch.
                       </p>
                       <p className="text-sm italic">
-                        Tipp: Die beiden Bücher bilden zusammen ein einzigartiges Gesamtbild – das Leben eines Privatdetektivs und die Wurzeln in der traditionsreichen Schwaigeralm bei Kreuth. Bald im Set erhältlich!
+                        Tipp: Die beiden Bücher bilden zusammen ein einzigartiges Gesamtbild – das Leben eines Privatdetektivs und die Wurzeln in der traditionsreichen Schwaigeralm bei Kreuth. Jetzt im Bundle erhältlich bei Buchkomplizen!
                       </p>
                     </div>
-                    <div className="flex flex-col sm:flex-row gap-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                       <Button
                         onClick={() => window.open('https://amzn.eu/d/3by4fpM', '_blank')}
-                        className="bg-[#FF9900] hover:bg-[#FF9900]/90 text-white transition-all duration-300 hover:scale-[1.02] transform"
+                        className="bg-[#FF9900] hover:bg-[#FF9900]/90 text-white transition-all duration-300 hover:scale-[1.02] transform w-full min-h-[48px] text-xs sm:text-sm whitespace-nowrap px-2 sm:px-3"
                       >
                         Jetzt auf Amazon kaufen
-                        <ExternalLink className="ml-2 h-4 w-4" />
+                        <ExternalLink className="ml-1 sm:ml-2 h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0" />
                       </Button>
                       <Button
                         onClick={() => window.open('https://amzn.eu/d/cCKzs4r', '_blank')}
-                        className="bg-[#FF9900] hover:bg-[#FF9900]/90 text-white transition-all duration-300 hover:scale-[1.02] transform"
+                        className="bg-[#FF9900] hover:bg-[#FF9900]/90 text-white transition-all duration-300 hover:scale-[1.02] transform w-full min-h-[48px] text-xs sm:text-sm whitespace-nowrap px-2 sm:px-3"
                       >
                         Jetzt auf Amazon kaufen
-                        <ExternalLink className="ml-2 h-4 w-4" />
+                        <ExternalLink className="ml-1 sm:ml-2 h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0" />
+                      </Button>
+                      <Button
+                        onClick={() => window.open('https://www.buchkomplizen.de/buecher/gesellschaft/bundle-gefahr-ist-mein-beruf-einkehr-in-der-schwaigeralm.html', '_blank')}
+                        className="bg-[#FF9900] hover:bg-[#FF9900]/90 text-white transition-all duration-300 hover:scale-[1.02] transform w-full min-h-[48px] text-xs sm:text-sm whitespace-nowrap px-2 sm:px-3"
+                      >
+                        Jetzt das Bundle kaufen
+                        <ExternalLink className="ml-1 sm:ml-2 h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0" />
                       </Button>
                     </div>
                   </div>
