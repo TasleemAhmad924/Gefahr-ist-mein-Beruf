@@ -57,7 +57,7 @@ export default function BookWebsite() {
       />
       <div className="min-h-screen bg-white text-foreground">
         {/* Hero Section */}
-        <section className="relative min-h-[100vh] flex items-center justify-center overflow-hidden">
+        <section id="hero" className="relative min-h-[100vh] flex items-center justify-center overflow-hidden">
           <div className="absolute inset-0">
             {/* Background image */}
             <div className="absolute inset-0">
@@ -112,7 +112,7 @@ export default function BookWebsite() {
         </section>
 
         {/* Author Section */}
-        <section className="py-16 md:py-24 border-t-2 border-primary/10">
+        <section id="author" className="py-16 md:py-24 border-t-2 border-primary/10">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-[90rem] mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
@@ -153,7 +153,7 @@ export default function BookWebsite() {
         </section>
 
         {/* Book Highlights */}
-        <section className="py-16 md:py-24 border-t-2 border-primary/10">
+        <section id="book-highlights" className="py-16 md:py-24 border-t-2 border-primary/10">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-black text-center mb-12">
               Inhalt
@@ -256,7 +256,7 @@ export default function BookWebsite() {
         </section>
 
         {/* About the Book */}
-        <section className="py-16 md:py-24 border-t-2 border-primary/10">
+        <section id="about-book" className="py-16 md:py-24 border-t-2 border-primary/10">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
               <div className="md:col-span-7 space-y-6">
@@ -365,7 +365,7 @@ export default function BookWebsite() {
         </section>
 
         {/* Media Coverage */}
-        <section className="py-16 md:py-24 border-t-2 border-primary/10">
+        <section id="media-coverage" className="py-16 md:py-24 border-t-2 border-primary/10">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-[90rem] mx-auto">
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-black text-center mb-12">
@@ -406,7 +406,7 @@ export default function BookWebsite() {
         </section>
 
         {/* Buy Now */}
-        <section className="py-16 md:py-24 border-t-2 border-primary/10">
+        <section id="buy-now" className="py-16 md:py-24 border-t-2 border-primary/10">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-[90rem] mx-auto">
               {/* Hugendubel & Thalia Section */}
@@ -576,7 +576,7 @@ export default function BookWebsite() {
         </section>
 
         {/* Contact Section */}
-        <section className="py-16 md:py-24">
+        <section id="contact" className="py-16 md:py-24">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-[90rem] mx-auto">
               <div className="rounded-lg bg-[#E53935] p-6 md:p-8 text-center">
@@ -608,7 +608,7 @@ export default function BookWebsite() {
         </section>
 
         {/* Footer */}
-        <footer className="py-16 md:py-24 border-t-2 border-primary">
+        <footer id="footer" className="py-16 md:py-24 border-t-2 border-primary">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-[90rem] mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
