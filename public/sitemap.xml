@@ -3,7 +3,7 @@
   <!-- Home Page (One-Page Site) -->
   <url>
     <loc>https://www.gefahr-ist-mein-beruf.de/</loc>
-    <lastmod>2025-04-17</lastmod>
+    <lastmod>2025-04-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -11,7 +11,7 @@
   <!-- Datenschutz (Privacy Policy) Page -->
   <url>
     <loc>https://www.gefahr-ist-mein-beruf.de/datenschutz</loc>
-    <lastmod>2025-04-17</lastmod>
+    <lastmod>2025-04-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -19,7 +19,7 @@
   <!-- Impressum (Legal Notice) Page -->
   <url>
     <loc>https://www.gefahr-ist-mein-beruf.de/impressum</loc>
-    <lastmod>2025-04-17</lastmod>
+    <lastmod>2025-04-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -27,58 +27,64 @@
   <!-- Sections of the One-Page Site -->
   <url>
     <loc>https://www.gefahr-ist-mein-beruf.de/#hero</loc>
-    <lastmod>2025-04-17</lastmod>
+    <lastmod>2025-04-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://www.gefahr-ist-mein-beruf.de/#author</loc>
-    <lastmod>2025-04-17</lastmod>
+    <lastmod>2025-04-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://www.gefahr-ist-mein-beruf.de/#book-highlights</loc>
-    <lastmod>2025-04-17</lastmod>
+    <lastmod>2025-04-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://www.gefahr-ist-mein-beruf.de/#about-book</loc>
-    <lastmod>2025-04-17</lastmod>
+    <lastmod>2025-04-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://www.gefahr-ist-mein-beruf.de/#media-coverage</loc>
-    <lastmod>2025-04-17</lastmod>
+    <lastmod>2025-04-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://www.gefahr-ist-mein-beruf.de/#buy-now</loc>
-    <lastmod>2025-04-17</lastmod>
+    <lastmod>2025-04-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.gefahr-ist-mein-beruf.de/#amazon-section</loc>
+    <lastmod>2025-04-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://www.gefahr-ist-mein-beruf.de/#contact</loc>
-    <lastmod>2025-04-17</lastmod>
+    <lastmod>2025-04-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://www.gefahr-ist-mein-beruf.de/#footer</loc>
-    <lastmod>2025-04-17</lastmod>
+    <lastmod>2025-04-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
-
 </urlset>
