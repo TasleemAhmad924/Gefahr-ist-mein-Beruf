@@ -502,7 +502,7 @@ export default function BookWebsite() {
               </div>
 
               {/* Amazon Section */}
-              <div className="rounded-lg border-2 border-primary/20 bg-white p-6 md:p-8 mt-8">
+              <div id="amazon-section" className="rounded-lg border-2 border-primary/20 bg-white p-6 md:p-8 mt-8">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-start">
                   <div className="space-y-6">
                     <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-black">
@@ -704,4 +704,4 @@ export default function BookWebsite() {
       </div>
     </ClientWrapper>
   );
-}
+} 
