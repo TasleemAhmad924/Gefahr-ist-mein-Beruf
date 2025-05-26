@@ -83,6 +83,19 @@ export default function RootLayout({
             })(window,document,'script','dataLayer','GTM-N825RXCR');
           `}
         </Script>
+        {/* Google Analytics 4 */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-TKCPZTRDW6"
+          strategy="afterInteractive"
+        />
+        <Script id="ga4" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-TKCPZTRDW6');
+          `}
+        </Script>
         {/* Google Tag Manager (direct) */}
         <script dangerouslySetInnerHTML={{
           __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

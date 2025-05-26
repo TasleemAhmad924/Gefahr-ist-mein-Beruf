@@ -3,7 +3,7 @@
   <!-- Home Page (One-Page Site) -->
   <url>
     <loc>https://www.gefahr-ist-mein-beruf.de/</loc>
-    <lastmod>2025-04-17</lastmod>
+    <lastmod>2024-04-17</lastmod>
     <changefreq>yearly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -11,7 +11,7 @@
   <!-- Datenschutz (Privacy Policy) Page -->
   <url>
     <loc>https://www.gefahr-ist-mein-beruf.de/datenschutz</loc>
-    <lastmod>2025-04-17</lastmod>
+    <lastmod>2024-04-17</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -19,7 +19,7 @@
   <!-- Impressum (Legal Notice) Page -->
   <url>
     <loc>https://www.gefahr-ist-mein-beruf.de/impressum</loc>
-    <lastmod>2025-04-17</lastmod>
+    <lastmod>2024-04-17</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
